@@ -6,3 +6,15 @@ dist-ssr/
 .env.*
 .DS_Store
 Thumbs.db
+
+# Drafts & raw files
+ABOUT SITE/
+FORM/
+PIC/
+POLICY/
+PRICE LIST/
+extract.js
+extract_script.py
+extracted_output.txt
+rsl_project_analysis.md
+
