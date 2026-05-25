@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Received Successfully | RSL Enterprise</title>
+  <meta name="description" content="Your financial application details have been safely transmitted to RSL Enterprise. Our Guwahati team will contact you shortly.">
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="apple-touch-icon" href="/images/logo.png">
+  <meta property="og:image" content="/images/logo.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .success-card {
+      background: white;
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-lg);
+      padding: 48px;
+      text-align: center;
+      max-width: 650px;
+      margin: 40px auto;
+      border: 1px solid rgba(15,76,129,0.06);
+    }
+    .success-icon {
+      font-size: 64px;
+      color: #10B981;
+      background: rgba(16, 185, 129, 0.1);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    .receipt-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      text-align: left;
+      font-size: 14px;
+    }
+    .receipt-table tr {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .receipt-table td {
+      padding: 12px 8px;
+    }
+    .receipt-table td:first-child {
+      font-weight: 700;
+      color: var(--primary-deep);
+      width: 40%;
+    }
+    .receipt-table td:last-child {
+      color: var(--text-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="/images/logo.png" alt="RSL Enterprise Logo" class="logo-img">
+        <div class="logo-text">RSL <span>Enterprise</span></div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Pricing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html" class="cta-btn">Apply Now</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Intro -->
+  <section class="page-intro" style="padding: 40px 0 20px;">
+    <div class="container">
+      <h1>Application Received</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Success</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Main Card -->
+  <section style="background-color: var(--bg-white); padding-bottom: 80px;">
+    <div class="container">
+      <div class="success-card reveal active">
+        <div class="success-icon">✓</div>
+        <h2 style="color: var(--primary-deep); font-size: 28px; margin-bottom: 12px;">Submission Complete!</h2>
+        <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 24px;">
+          Your application details and files have been successfully sent to RSL Enterprise. Our team in Guwahati will verify your records and reach out within 24 to 48 working hours.
+        </p>
+
+        <div style="background: var(--bg-slate); border-radius: var(--border-radius-sm); padding: 12px 20px; font-weight: 700; color: var(--primary-deep); font-size: 14px; display: inline-block; margin-bottom: 24px; border: 1px dashed rgba(15,76,129,0.2);">
+          Confirmation ID: <span id="confirm-id" style="color: var(--accent-amber);">RSL-892415</span>
+        </div>
+
+        <!-- Rendered Summary Table -->
+        <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 24px;">
+          <h4 style="text-align: left; color: var(--primary-deep); font-size: 16px; margin-bottom: 12px;">Summary of Details Submitted:</h4>
+          <table class="receipt-table" id="receipt-table">
+            <tbody>
+              <!-- Injected by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top: 32px; display: flex; gap: 16px; justify-content: center;">
+          <a href="index.html" class="cta-btn secondary">Back to Home</a>
+          <a href="contact.html" class="cta-btn">Contact Helpline</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 24px;">
+          <img src="/images/logo.png" alt="RSL Enterprise Logo" class="logo-img" style="height: 48px;">
+          <div class="logo-text" style="color: white;">RSL <span style="color: var(--accent-gold);">Enterprise</span></div>
+        </div>
+        <p>A trusted financial services partner in Guwahati since 2017. Committed to financial inclusion and small-medium business growth across North East India.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Pricing</a></li>
+          <li><a href="portfolio.html">Portfolio / Sectors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support & Policies</h3>
+        <ul>
+          <li><a href="faq.html">Help & FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html#policies">Privacy & Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Guwahati Head Office</h3>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <div>4th Floor, Care Building,<br>Near Kamrup Metro, Maligaon Charali,<br>Guwahati, Assam - 781011</div>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <div>+91 97072 82201</div>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <div>rslenterprise001@gmail.com</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <div>&copy; 2026 RSL Enterprise. All Rights Reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="about.html#terms">Terms of Service</a> | 
+        <a href="about.html#privacy">Privacy Policy</a> | 
+        <a href="about.html#refunds">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Generate Random Confirmation Code
+      const randNum = Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('confirm-id').textContent = `RSL-${randNum}`;
+
+      // 2. Load submitted data from Session Storage
+      const service = sessionStorage.getItem('last_submission_service') || 'Application';
+      const dataStr = sessionStorage.getItem('last_submission_data');
+      
+      const tableBody = document.querySelector('#receipt-table tbody');
+      
+      if (dataStr) {
+        try {
+          const data = JSON.parse(dataStr);
+          
+          // Add Category Row
+          const serviceNameMap = {
+            loan: "Detailed Bank Loan DPR",
+            cc: "Cash Credit Renewal / CMA Projections",
+            tax: "Income Tax ITR Filing",
+            msme: "MSME / Udyam Registration"
+          };
+          
+          let html = `
+            <tr>
+              <td>Application Type</td>
+              <td style="font-weight: 700; color: var(--accent-amber);">${serviceNameMap[service] || service}</td>
+            </tr>
+          `;
+
+          // Iterate and add rows
+          for (const [key, value] of Object.entries(data)) {
+            // Clean up key names slightly for presentation (e.g. email -> Email Address, phone -> Phone Number)
+            let formattedKey = key;
+            if (key === 'email') formattedKey = 'Email Address';
+            if (key === 'phone') formattedKey = 'Phone Number';
+            
+            // Skip empty values
+            if (value !== null && value !== undefined && value !== '') {
+              html += `
+                <tr>
+                  <td>${formattedKey}</td>
+                  <td>${value}</td>
+                </tr>
+              `;
+            }
+          }
+          
+          tableBody.innerHTML = html;
+        } catch (e) {
+          console.error("Failed to parse summary data", e);
+          tableBody.innerHTML = `<tr><td>Status</td><td>Submitted successfully to rslenterprise001@gmail.com</td></tr>`;
+        }
+      } else {
+        tableBody.innerHTML = `<tr><td>Status</td><td>Submitted successfully to rslenterprise001@gmail.com</td></tr>`;
+      }
+    });
+  </script>
+</body>
+</html>
